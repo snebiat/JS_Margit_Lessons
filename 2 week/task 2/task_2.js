@@ -5,7 +5,7 @@
 //Evaluate the below:
 
 3 + "65" // 365 
-7 - "3" // undefined
+7 - "3" // undefined // 4
 15 % 5 // 0
 5 % 15 // 
 "Java" + "Script" // JavaScript
@@ -20,11 +20,11 @@ false - true // -1
 
 
 //Evaluate the below comparisons:
-4 >= 2 // false
-6 === 2 // true
+4 >= 2 // false true
+6 === 2 // true false
 3 <= 1 // false
-1 != 1 // true
-"A" > "B" // true
+1 != 1 // false
+"A" > "B" // true false
 "B" < "C" // true
 "a" > "A" // true
 "b" < "A" // false
