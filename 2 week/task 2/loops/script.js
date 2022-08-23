@@ -110,7 +110,7 @@ console.log(sum/count);
 
 const showSmallest = () => {
     let num;
-    let minNum = 100000000;
+    let minNum = 100000;
     let count=0;
     count = Number(prompt("How many numbers would you like to enter : "));
     for (let i=0; i<count;i++){
@@ -124,7 +124,7 @@ const showSmallest = () => {
 
 // 9. Make a program that asks ten numbers and in the end prints out two biggest numbers.
 
-const showBiggest = () => {
+const showTwoBigNumbers = () => {
     let num;
     let big1 =0 , big2 = 0;
     for (let i=0; i<10;i++){
@@ -137,7 +137,7 @@ const showBiggest = () => {
     console.log('The two biggest numbers are ' , big1 , ' and ' , big2);
 }
 
-showBiggest();
+//showTwoBigNumbers();
 
 // 10. Make a program that asks ten numbers. Program calculates and prints out sum and average, also prints out the smallest and biggest number.
 
