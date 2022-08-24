@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
         <h1>Gasoline price calculator</h1>
         <h2></h2>
-        <span> Price : </span>
-        <input id="price"/>
-        <span> Money : </span>
-        <input id="money"/>
-        <button onclick=calculateGasoline(document.getElementById(price).textContent,document.getElementById(money).textContent)>Calculate</button>
+    <div id="form">
+        <p>Make a program that asks the price of the gasoline and the amount of money from the user. The program calculates how much gasoline the user gets with the money. The result is displayed on to screen. If there are more than 10 litres, then message on the screen: "good, you can escape now" if less, it shows the message: "Ups, you have to stay here."</p>
+        <div>
+            <label for="price"> Price : </label>
+            <input id="price" type="text"/>
+        </div>
+        <span><br></span>
+        <div>
+            <label for="money"> Money : </label>
+            <input id="money" type="text"/>
+        </div>
+       <div id="btnCalculate">
+        <button onclick="calculateGasoline(+document.getElementById('price').value,+document.getElementById('money').value)">Calculate</button>
+       </div> 
+       <div id="result">
         <span id="result"></span>
+       </div>
+    </div>
         <script src="script.js"></script>
     </body>
 </html>
