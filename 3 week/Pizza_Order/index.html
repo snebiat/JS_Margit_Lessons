@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div id="form">
+                        <h1>Pizza Order</h1>
+                    <div>
+                        <section id="customer">
+                            <label for="customer_name">Your name : </label>
+                            <input type="text" id="customer_name">
+                        </section>
+                        <section id="sizes">
+                            <label"> Pizza Size : </label>
+                            <table>
+                                <tr><td><input type="radio" value="size_2" name="pizza_size"/> For 2 (price is 7,50€) </td></tr>
+                                <tr><td><input type="radio" value="size_4" name="pizza_size"/> For 4 (price is 10,50€)</td></tr>
+                                <tr><td><input type="radio" value="size_6" name="pizza_size"/> For 6 (price is 12,50€)</td></tr>
+                                <tr><td><input type="radio" value="size_8" name="pizza_size"/> For 8 (price is 15,50€)</td></tr>
+                            </table>
+                        </section>
+                        <section id="toppings">
+                            <label> Toppings : (first four are free, after that +0,5€)</label>
+                            <table>
+                                <tr><td><input type="checkbox" value="onions" name="topping" />Onions</td></tr>
+                                <tr><td><input type="checkbox" value="Peppers" name="topping" />Peppers</td></tr>
+                                <tr><td><input type="checkbox" value="olives" name="topping"  />Olives</td></tr>
+                                <tr><td><input type="checkbox" value="pineapple" name="topping" />Pineapple</td></tr>
+                                <tr><td><input type="checkbox" value="artichokes" name="topping" />Artichokes</td></tr>
+                                <tr><td><input type="checkbox" value="mushrooms" name="topping" />Mushrooms</td></tr>
+                                <tr><td><input type="checkbox" value="pepperoni" name="topping" name="topping" />Pepperoni</td></tr>
+                                <tr><td><input type="checkbox" value="bacon" name="topping" />Bacon</td></tr>
+                                <tr><td><input type="checkbox" value="cheese" name="topping" />Extra cheese</td></tr>
+                            </table>   
+                        </section>
+                        <section>
+                            <label for="delivery"> Delivery : </label>
+                            <select id="delivery" onchange="selectDelivery()">
+                                <option id="home" value="Home delivery">Delivery home</option>
+                                <option id="eatin" value="Eat in">Eat in</option>
+                                <option id="pickup" value="Pick up">Pickup food</option>
+                            </select> <label id="delivery_price"></label>
+                        </section>
+                    </div>
+                    <div id="btnCalculate">
+                        <button onclick="generateSummary()">Order Pizza</button>
+                    </div>
+                </div>
+                </td>
+                <td id="summary">
+                    <div id="summary_form">
+                        <section id="order_summary">
+                            <h3> Your order summary : </h3>
+                            <table>
+                            <tr>
+                                <td><label>Your name : </label></td>
+                                <td><label id="cust_name_summary"></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Pizza size : </label></td>
+                                <td><label id="piz_size_summary"></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Toppings : </label></td>
+                                <td><label id="toppings_summary"></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Delivery method : </label></td>
+                                <td><label id="delivery_summary"></label></td>
+                            </tr>
+                            <tr id="total_price">
+                                <td><label>TOTAL PRICE : </label></td>
+                                <td><label id="price_summary"></label></td>
+                            </tr>
+                            </table>
+                        </section>
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+        
+    <script src="script.js"></script>
+    </body>
+</html>

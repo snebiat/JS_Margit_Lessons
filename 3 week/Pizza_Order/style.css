@@ -1,0 +1,72 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  #sizes, #customer , #toppings  {
+    margin: 10px 0;
+  }
+  #summary {
+    
+    visibility: hidden;
+    background-color: white;
+    /*background-color:rgb(79, 76, 76);*/
+  }
+#summary_form {
+  width: 500px;
+  height: 650px;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+}
+#total_price {
+  color: brown;
+  font-size: medium;
+  font-weight: bold;
+}
+ #summary {
+  background-image: url('pizza.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+ }
+
+  #form {
+    background-color:rgb(227, 223, 223);
+    width: 500px;
+    height: 650px;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+   
+  }
+
+  h1 {
+  align-content: center;
+  color: brown;
+  }
+  #toppings {
+  margin: 10px 0;
+  display: inline-block;
+  }
+  
+  button {
+    border: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  input,
+  button, #delivery {
+    font-family: inherit;
+  }
+  
