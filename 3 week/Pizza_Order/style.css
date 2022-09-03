@@ -1,72 +1,123 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  label {
-    display: inline-block;
-    margin: 10px 0;
-  }
-  #sizes, #customer , #toppings  {
-    margin: 10px 0;
-  }
-  #summary {
-    
-    visibility: hidden;
-    background-color: white;
-    /*background-color:rgb(79, 76, 76);*/
-  }
-#summary_form {
-  width: 500px;
-  height: 650px;
-  padding-top: 35px;
-  padding-left: 25px;
-  padding-right: 35px;
-  padding-bottom: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
-#total_price {
-  color: brown;
-  font-size: medium;
-  font-weight: bold;
+#container {
+  display: flex;
+  margin: 5px 5px;
+  width: 50vw;
 }
- #summary {
+#content {
+  flex: 2;
+  background-color:rgb(227, 223, 223);
+} 
+#summary {
+  flex:2;
   background-image: url('pizza.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size:cover;
+  visibility:hidden;
+ 
  }
+#sizes {
+  display: flex;
+  margin: 15px;
+  align-content: flex-end;
+}
+.pizza_image_2 {
+  position: inherit; 
+  width: 50px; 
+  height: 50px;
+  overflow: hidden; 
+  border-radius: 50%; 
+} 
+.pizza_image_4 {
+  position: inherit; 
+  width: 65px; 
+  height: 65px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+.pizza_image_6 {
+  position: inherit; 
+  width: 80px; 
+  height: 80px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+.pizza_image_8 {
+  position: inherit; 
+  width: 95px; 
+  height: 95px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+img { 
+  width: 100%; 
+  height: auto;
+  opacity: 0.6;
+}
 
-  #form {
-    background-color:rgb(227, 223, 223);
-    width: 500px;
-    height: 650px;
-    padding-top: 35px;
-    padding-left: 25px;
-    padding-right: 35px;
-    padding-bottom: 35px;
-   
-  }
+img:hover { 
+  opacity: 0.8;
+}
 
-  h1 {
-  align-content: center;
+#form_label  {
   color: brown;
-  }
-  #toppings {
+} 
+  
+#p_size {
+  color: brown;
+  text-align: end;
+  font-weight: bold;
+  font-size: 20px;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+#summary label {
+  font-weight: bold;
+  font-size: 20px;
+}  
+#order_summary {
+  margin: 5px 15px;;
+}
+#total_price {
+  color: brown;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+form {
+  margin-left: 20px; 
+}
+
+h1 {
+  margin-left: 20px;
+  color: brown;
+}
+#toppings {
+  display: flex;
   margin: 10px 0;
   display: inline-block;
-  }
+}
   
-  button {
-    border: none;
-    background-color: brown;
-    padding: 10px;
-    border-radius: 2px;
-    margin-top: 20px;
-    color: white;
-  }
+button {
+  border: none;
+  background-color: brown;
+  padding: 10px;
+  border-radius: 5%;
+  margin-top: 20px;
+  color: white;
+}
   
-  input,
-  button, #delivery {
-    font-family: inherit;
-  }
-  
+input,
+button, #delivery {
+  font-family: inherit;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+   

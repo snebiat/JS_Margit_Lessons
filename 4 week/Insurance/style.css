@@ -1,0 +1,81 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+body {
+    background-color: #1068b1;
+    font-family: 'Petrona', serif;
+}
+ 
+form {
+    display: block;
+    background-color: #094e87;
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+}
+
+#container {
+    display: flex;
+    width: 50vw;
+}
+
+#content {
+    padding: 1rem; 
+}
+div {
+    padding: 0.5rem;
+}
+
+button {
+        border: none;
+        background-color: #003658;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin: 0.5rem 0;
+        color: rgb(206, 218, 226);
+        font-family: 'Petrona', serif;
+        font-size: 2rem;
+        width: 40rem;
+}
+
+#label_criteria {
+    color: white;
+    font-size: 25px;
+    padding-top: rem;
+}
+#label_customer {
+    color: white;
+    font-size: 20px;
+}
+input {
+    border: none;
+    font-family: inherit;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+} 
+  
+#score {
+    font-family: 'Petrona', serif;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+span {
+    color:rgb(4, 4, 119);
+    font-weight: bold;
+}
+
+h1 {
+    padding: 1rem; 
+}
+label {
+    font-size: 1.2rem;
+}
