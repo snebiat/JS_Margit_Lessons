@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@300;400&display=swap" rel="stylesheet">
+    <title>Cars Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="form_search">
+        <label id="section_title">Search car by license number</label>
+            <div>
+                <label id="search_license"  for="search_license_number">License number : </label>
+                <input type="text" id="search_license_number" size="35">
+            </div>
+            <button id="btn_search" type="submit">Search</button>
+        </form>
+        <p id="search_result"></p>
+        <p id="line"></p>
+        <div id="database">
+            <div id="carinfo">
+                <form id="insert">
+                    <label id="section_title">Insert car data</label>
+                    <div>
+                        <label id="license"  for="license_number">License number : </label>
+                        <input type="text" id="license_number">
+                    </div>
+                    <div>
+                        <label id="maker"  for="car_maker">Car maker : </label>
+                        <input type="text" id="car_maker">
+                    </div>
+                    <div>
+                        <label id="model"  for="car_model">Car model : </label>
+                        <input type="text" id="car_model">
+                    </div>
+                    <div>
+                        <label id="owner"  for="car_owner">Car Owner : </label>
+                        <input type="text" id="car_owner">
+                    </div>
+                    <div>
+                        <label id="price"  for="car_price">Car price : </label>
+                        <input type="number" id="car_price">
+                    </div>
+                    <div>
+                        <label id="color"  for="car_color">Car color : </label>
+                        <input type="text" id="car_color">
+                    </div>
+                    <div>
+                        <button type="submit">Add Car</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div id="carDB">
+                <label id="section_title">Cars database</label>
+                    <table id="cars_database" frame="void" rules="all">
+                        <thead>
+                            <tr>
+                                <th>LICENSE</th>
+                                <th>MAKER</th>
+                                <th>MODEL</th>
+                                <th>OWNER</th>
+                                <th>PRICE</th>
+                                <th>COLOR</th>
+                            </tr>
+                        <thead>
+                    </table>
+                    
+               
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

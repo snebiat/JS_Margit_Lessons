@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="selection">
+            <div>
+                <h1>Linear gradient generator</h1>
+            </div>
+            <h3>Colors</h3>
+            
+            <div>
+                <input type="color" name="first_color" id="first_color">
+                <input type="color" name="second_color" id="second_color">
+            </div>
+            
+            <h3 for="">Direction</h3>
+            <div class="direction_select">
+                <div>
+                    <input type="radio" name="direction" id="id_left_down" value="left_down">
+                    <label for='id_left_down'><span class="material-symbols-outlined">
+                        south_east
+                    </span></label>
+                
+                    <input type="radio" name="direction" id="id_down" value="down">
+                    <label for='id_down'><span class="material-symbols-outlined">
+                        arrow_downward
+                    </span></label>
+                
+                    <input type="radio" name="direction" id="id_right_down" value="right_down">
+                    <label for='id_right_down'><span class="material-symbols-outlined">
+                        call_received
+                    </span></label>
+              
+                </div>            
+                <div class="middle_row">
+                    <input type="radio" name="direction" id="id_left_middle" value="left_middle">
+                    <label for='id_left_middle'><span class="material-symbols-outlined">
+                            arrow_forward
+                    </span></label>
+                    
+                    <input type="radio" name="direction" id="id_right_middle" value="right_middle">
+                    <label for='id_right_middle'><span class="material-symbols-outlined">
+                            arrow_back
+                    </span></label>
+                </div>   
+                <div>
+                    <input type="radio" name="direction" id="id_left_up" value="left_up">
+                    <label for='id_left_up'><span class="material-symbols-outlined">
+                            arrow_outward
+                    </span></label>
+                    
+                    <input type="radio" name="direction" id="id_up" value="up">
+                    <label for='id_up'><span class="material-symbols-outlined">
+                            arrow_upward
+                    </span></label>
+                    
+                    <input type="radio" name="direction" id="id_right_up" value="right_up">
+                    <label for='id_right_up'><span class="material-symbols-outlined">
+                            north_west
+                    </span></label>
+                </div>
+                        
+                    
+                         
+            </div>
+            <div id="result">
+                <h3>CSS code : </h3>
+            </div>
+        </div>
+       
+        <div id="bg_show">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

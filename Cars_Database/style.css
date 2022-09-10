@@ -1,0 +1,83 @@
+#container {
+    background-color: rgb(218, 211, 211);
+    margin: 0.5rem;
+    border: 10px solid #0570b2;
+    /* width: 50vw; */
+}
+#database {
+    display: flex;
+    margin: 0.5rem;
+    justify-content:space-between;
+    /* background-color: rgb(186, 176, 176); */
+} 
+#section_title {
+    font-size: 2rem;
+    color: #003658;
+}
+
+p {
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    color: #0570b2;
+    font-size: 2rem;
+}
+
+form {
+    margin: 0.5rem;
+    border-radius: 5px;
+   /*  width: inherit;
+    height: inherit; */
+   
+}
+input {
+    border: none;
+    font-family: 'Petrona', serif;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+} 
+#insert label {
+    display: inline-block;
+    width: 250px;
+}
+button {
+    border: none;
+    background-color: #003658;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    color: rgb(206, 218, 226);
+    font-family: 'Petrona', serif;
+    font-size: 1rem;
+    width: 10rem;
+}
+button:hover {
+    cursor: pointer;
+}
+#cars_database {
+    border: 1px;
+    font-family: 'Petrona', serif;
+}
+th {
+    padding: 0.5rem;
+    background-color: #74b2d8;
+}
+td {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+   
+#cars_database th, td{
+    border-collapse: collapse;
+    border: 1px solid #3e4245;
+    
+}
+label {
+    font-size: 1.2rem;
+    font-family: 'Petrona', serif;
+}
+#line {
+    margin: 0;
+    border-bottom: 10px solid #0570b2;
+}
