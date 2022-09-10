@@ -18,69 +18,68 @@
                 <h1>Linear gradient generator</h1>
             </div>
             <h3>Colors</h3>
-            
-            <div>
-                <input type="color" name="first_color" id="first_color">
-                <input type="color" name="second_color" id="second_color">
+            <div id="color_selection">
+                <div>
+                    <input type="color" name="first_color" id="first_color">
+                </div>
+                  <div>
+                    <input type="color" name="second_color" id="second_color">
+                  </div>
+                    
             </div>
-            
             <h3 for="">Direction</h3>
             <div class="direction_select">
                 <div>
-                    <input type="radio" name="direction" id="id_left_down" value="left_down">
+                    <input type="radio" name="direction" id="id_left_down" value="left_down" onclick="generateGradient('id_left_down')">
                     <label for='id_left_down'><span class="material-symbols-outlined">
                         south_east
                     </span></label>
-                
-                    <input type="radio" name="direction" id="id_down" value="down">
+                    <input type="radio" name="direction" id="id_down" value="down" onclick="generateGradient('id_down')">
                     <label for='id_down'><span class="material-symbols-outlined">
                         arrow_downward
                     </span></label>
-                
-                    <input type="radio" name="direction" id="id_right_down" value="right_down">
+                    <input type="radio" name="direction" id="id_right_down" value="right_down" onclick="generateGradient('id_right_down')">
                     <label for='id_right_down'><span class="material-symbols-outlined">
                         call_received
                     </span></label>
               
                 </div>            
                 <div class="middle_row">
-                    <input type="radio" name="direction" id="id_left_middle" value="left_middle">
+                    <input type="radio" name="direction" id="id_left_middle" value="left_middle" onclick="generateGradient('id_left_middle')">
                     <label for='id_left_middle'><span class="material-symbols-outlined">
-                            arrow_forward
+                        arrow_forward
                     </span></label>
-                    
-                    <input type="radio" name="direction" id="id_right_middle" value="right_middle">
+                    <input type="radio" name="direction" id="id_middle" value="middle">
+                    <label id="id_middle_label" for='id_middle'><span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></label>
+                    <input type="radio" name="direction" id="id_right_middle" value="right_middle" onclick="generateGradient('id_right_middle')">
                     <label for='id_right_middle'><span class="material-symbols-outlined">
-                            arrow_back
+                        arrow_back
                     </span></label>
                 </div>   
                 <div>
-                    <input type="radio" name="direction" id="id_left_up" value="left_up">
+                    <input type="radio" name="direction" id="id_left_up" value="left_up" onclick="generateGradient('id_left_up')">
                     <label for='id_left_up'><span class="material-symbols-outlined">
                             arrow_outward
                     </span></label>
                     
-                    <input type="radio" name="direction" id="id_up" value="up">
+                    <input type="radio" name="direction" id="id_up" value="up" onclick="generateGradient('id_up')">
                     <label for='id_up'><span class="material-symbols-outlined">
                             arrow_upward
                     </span></label>
-                    
-                    <input type="radio" name="direction" id="id_right_up" value="right_up">
+                    <input type="radio" name="direction" id="id_right_up" value="right_up" onclick="generateGradient('id_right_up')">
                     <label for='id_right_up'><span class="material-symbols-outlined">
                             north_west
                     </span></label>
-                </div>
-                        
-                    
-                         
+                </div>         
             </div>
-            <div id="result">
+            <div>
                 <h3>CSS code : </h3>
+                <p id="css_result"></p>
             </div>
         </div>
-       
         <div id="bg_show">
-            
         </div>
     </div>
     <script src="script.js"></script>
