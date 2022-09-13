@@ -8,6 +8,7 @@
 
 #container {
     display: flex;
+
 }
 
 #selection {
@@ -18,6 +19,7 @@
 #bg_show {
     flex: 5;
     background-color: #444;
+    height: 100vh;
 }
 label {
     font-size: 1.2rem;
