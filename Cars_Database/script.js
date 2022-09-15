@@ -46,15 +46,5 @@ const searchCar = (event) => {
     }  
 }
 
-
-
-
-
-
-
-
 search_form.addEventListener('submit', searchCar);
 insert_form.addEventListener('submit', insertCar);
-
-
-

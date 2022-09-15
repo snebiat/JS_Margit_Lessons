@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none; /* this makes the page fixed and not possible to drag the whole page */
+  
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Petrona', serif;
+    color: white;
+}
+header, section,footer {
+    padding: 2rem;
+}
+
+/* HEADER */  
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00608A;
+    height: 100px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    display:inline-block;
+    margin: 1rem;
+}
+
+.bg {
+    background-color: white;
+}
+
+.bg a, .bg span {
+    color: #0b52b6;
+}
+
+section {
+    min-height: 50vh; /* put some limitation but it can grow bigger so use the min-height option if the content might grow  */
+    scroll-margin-top: 5rem;
+}
+/* #first {
+    background-color: #00608A;
+    height: 250px;
+}
+#second {
+    background-color: #006B99;
+    height: 250px;
+}
+#third {
+    background-color: #66ADCC;
+    height: 250px;
+} */
+section:first-child { /* can use id here but use pseudo elements for styling */
+    background-color: #00608A;
+}
+
+section:nth-child(2) {
+    background-color: #006B99;
+}
+section:nth-child(3) {
+    background-color: #66ADCC;
+}
+section:last-child {
+    background-color: #66ADCC;
+}
+#contact {
+    background-color: #9DCCE0;
+}
+/* .h2 {
+     padding: 1rem; 
+   
+}*/
+/*
+.logo {
+    flex: 3;
+} */
+
+ul {
+   
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+    margin-top: 0.3rem;
+}
+a {
+    color: white; 
+    text-decoration: none; 
+    margin: 1rem;
+    font-size: 25px;
+}
+a:hover {
+    background-color: #0b52b6;
+}
+
+footer {
+    background-color: #9DCCE0;
+}
+#open_modal, #back_to_top {
+    background-color: #66ADCC;
+    margin: 0.3rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-family: 'Petrona', serif;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#modal {
+    position: relative;
+    color: black;
+    background-color: white; 
+    width: 50vw;
+    min-height: 50vh;
+    top:0;
+    left: 0;
+    padding: 3rem;
+   
+}
+#modal span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#back_to_top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* MOBILE */ 
+@media only screen and (max-width: 800px) { /* this works perfect without the 'only screen and' part */
+
+nav ul {
+        display: none;
+}
+
+
+h1 {
+    font-size: 1.2rem;
+}
+
+#mob_button {
+    background-color: transparent;
+    display: block;
+    border: none;
+    color: white;
+}
+nav.responsive ul {
+    background-color: white;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+nav.responsive ul li {
+    display: block;
+}
+
+nav.responsive ul li a{
+    color: #0b52b6;;
+}
+
+}
