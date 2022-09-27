@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none; 
+}
+
+html { 
+    height: 100%; 
+    font-size: 10px; 
+}
+
+@font-face {
+    font-family: ASTERA;
+    src: url(fonts/ASTERA\ v2.ttf);
+}
+
+body {
+    
+    font-size: 2rem;
+}
+
+/* HEADING */
+
+header, h1 , h2 , h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: ASTERA;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #6a329f;
+}
+
+#topScore  {
+    color: green;
+    font-size: 5rem;
+}
+
+/* CIRCLES */
+
+.circles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    margin: 50px;
+}
+
+.circle {
+    height: 20rem;
+    width: 20rem;
+    border: none;
+    background-color: white;
+    color: white;
+     /* Image by OpenClipart-Vectors from Pixabay */
+    background-image: url(images/buttons.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 15px black; 
+    
+}
+
+button:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+}
+
+.active {
+     background-image: url(images/buttons_active.png); 
+}
+
+.click {
+    background-image: url(images/button_click.png);
+}
+
+/* SCORE */
+
+p {
+    padding: 5px;
+    margin: 10px;
+}
+
+/* BUTTONS */
+
+#startGame {
+    border-radius: .4rem; 
+    border: .2rem solid #6a329f; 
+    box-shadow: 0 3px 0 0 #6a329f; 
+    font-size: 2.5rem;
+    border-radius: 5px; 
+    letter-spacing: 0.04rem;
+    padding: 1.5rem 3rem; 
+    cursor: pointer;   
+    position: relative;
+    overflow: hidden;
+}
+
+#startGame:active {
+    top: 3px;  
+    box-shadow: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 2.5rem;
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-image: url(images/button_click.png);
+}
+
+/* MODAL */
+
+.modal h2 {
+    color: #9f1508;
+}
+
+.overlay {
+    display: none;
+}
+  
+.overlay.visible {
+    display: flex;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.overlay.visible .modal {
+    position: relative;
+    background: white;
+    min-height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    padding: 3rem;
+}
+  
+.overlay.visible .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn {
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    
+}
+#close_modal {
+    color: #9f1508;
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
