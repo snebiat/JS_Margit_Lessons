@@ -87,6 +87,7 @@ const startGame = () => {
 }
 
 const endGame = () => {
+
     clearTimeout(gameTimeout);
     backgroundMusic.stop();
     wrong_answer.stop();

@@ -57,7 +57,7 @@ h1 {
     background-color: white;
     color: white;
      /* Image by OpenClipart-Vectors from Pixabay */
-    background-image: url(images/buttons.png);
+    background-image: url('images/buttons.png');
     background-size: cover;
     background-position: center;
     border-radius: 100%;
@@ -71,11 +71,11 @@ button:disabled {
 }
 
 .active {
-     background-image: url(images/buttons_active.png); 
+     background-image: url('images/buttons_active.png'); 
 }
 
 .click {
-    background-image: url(images/button_click.png);
+    background-image: url('images/button_click.png');
 }
 
 /* SCORE */
@@ -123,7 +123,7 @@ button:hover {
 }
 
 button:active {
-    background-image: url(images/button_click.png);
+    background-image: url('images/button_click.png');
 }
 
 /* MODAL */

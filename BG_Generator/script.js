@@ -10,8 +10,6 @@ const generateGradient = (id) => {
     for (const current of gradient_direction) {
         if (current.checked) gradient_angle = current.value;
     }
-    
-    //document.body.style.backgroundImage = `linear-gradient(${gradient_angle}, ${first_color}, ${second_color})`; 
     output.style.backgroundImage = `linear-gradient(${gradient_angle}, ${first_color}, ${second_color})`; 
     css_output.textContent = `linear-gradient(${gradient_angle}, ${first_color}, ${second_color});`; 
 }
